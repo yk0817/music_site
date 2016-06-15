@@ -69,7 +69,7 @@ transition: color 1s;
 
 */
 main{
-  margin-top: 120px;
+  margin-top: 150px;
   position: absolute;
   width:100%;
 }
@@ -153,15 +153,22 @@ h3 {
   /*top: 200px;*/
   left: 10%;
 }
+.genre-nav{
+  position: fixed;
+  top: 80px;
+  z-index: 9998;
+  width: 100%;
+  background-color: white;
+  width: 80%;
+  left: 10%;
+  margin-top: 3px;
+}
+
 .genre-main>nav>div>ul {
   background-color: white;
 
 }
-/*.genre-main>nav>div>ul>li{
-  display: inline-block;
-  margin-right: 50px;
-  padding: 5px;
-}*/
+
 
 nav>div>ul>li{
   display: inline-block;
@@ -169,15 +176,23 @@ nav>div>ul>li{
   padding: 5px;
 }
 
-.genre-main>nav>div>ul>li:hover{
+.genre-nav>div>ul>li:hover{
   background-color: gray;
   border-radius: 5px;
   opacity: 0.3;
   transition:1s;
 }
-.genre-main>nav>div>ul>li>a{
+.genre-nav>div>ul{
+  height: 30px;
+  margin-top: 0px;
+  background-color: blue;
+}
+.genre-nav>div>ul>li>a{
   text-decoration: none;
   color: black;
+}
+.genre-nav{
+  height: 30px;
 }
 .genre-main>.genre_index{
   background-color: white;
@@ -185,7 +200,9 @@ nav>div>ul>li{
 }
 .genre_index{
   background-color: white;
+  top: 60px;
   /*position: fixed;*/
+  /*z-index: 9998;*/
 }
 .genre_index>h3{
   width: 15%;
@@ -206,4 +223,16 @@ nav>div>ul>li{
   width: 100%;
   object-fit: contain;
   height: 260px;
+}
+/* regist_artist.php のスタイル*/
+.artist_regist{
+  position:absolute;
+  top: 200px;
+}
+.upload_btn {
+  display:none;
+}
+
+.regist_form{
+  display: none;
 }

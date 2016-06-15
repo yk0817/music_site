@@ -1,6 +1,6 @@
 <?php
 include("header.php");
- ?>
+?>
     <main>
       <section class="top">
         <div class="top-content">
@@ -61,7 +61,6 @@ include("header.php");
           </section>
         </div>
       </section>
-
     </main>
 
   </div>
