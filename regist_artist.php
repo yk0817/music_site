@@ -5,7 +5,6 @@ include("header.php");
  ?>
  <link rel="stylesheet" href="./css/style1.css">
 
-
 <form class="artist_regist" action="regist_confirm.php" method="post" enctype="multipart/form-data" >
   <fieldset>
     <legend>アーティスト登録</legend>
@@ -27,7 +26,7 @@ include("header.php");
 
       <p><label>mail: <input name ="email" type="text" placeholder="mail-address"></label></p>
       <p>
-        <label>HP: <input name ="hp" type="text" placeholder=""></label>
+         <label>HP: <input name ="hp" type="text" placeholder=""></label>
       </p>
       <p>
         <input type="file" accept="image/*" class="image_file" capture="camera" name="upfile">

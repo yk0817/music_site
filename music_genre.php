@@ -17,6 +17,8 @@ include("header.php");
        <li><a href="">POPS</a></li>
        <li><a href="">アニソン</a></li>
      </ul>
+  </div>
+
  </nav>
 
 <main class="genre-main">
@@ -28,9 +30,9 @@ include("header.php");
           <a href="#"><img src="./img/1.jpg" alt=""></a>
           <h3>やけのはら</h3>
           <p>ジャンル：ALL-MIX
-            <p>料金：10000円/hr
-            <p>HP:
-            <p>オファー
+            <br>料金：10000円/hr
+            <br>HP:
+            <br>オファー
           </p>
         </li>
         <li>
@@ -233,7 +235,8 @@ include("header.php");
 //
 
   function start_html(){
-    // すぐにアペンド
+    // すぐにアペンドするようにしておく
+    // コードが楽になるから
 
   }
 
@@ -259,8 +262,10 @@ include("header.php");
         // view += "<li><a href=\"#\"><img src=" + j_data[0]["Image_place"] + "></a><h3>"+ j_data[0]["Name"] + "</h3><p>"+ j_data[0]["Genre"] + "</p>" + "</li>";
         // $(id).before(view);
 
+        console.log(j_data[0]["Image_place"]);
+
         for (var i = 0; i < 3; i++) {
-          view += "<li><a href=\"#\"><img src=" + j_data[i]["Image_place"] + "></a><h3>"+ j_data[i]["Name"] + "</h3><p>"+ j_data[i]["Genre"] + "</p>" + "</li>";
+          view += "<li><a href=\"#\">" + j_data[i]["Image_place"] + "</a><h3>"+ j_data[i]["Name"] + "</h3><p>"+ j_data[i]["Genre"] + "</p>" + "</li>";
         };
           $(id).before(view);
 

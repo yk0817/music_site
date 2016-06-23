@@ -9,6 +9,7 @@ isset($_POST["artist"]) || isset($_POST["email"]) || isset($_POST["hp"]) || isse
    $artist = $_POST["artist"];
    $email = $_POST["email"];
    $hp = $_POST["hp"];
+   $genre = $_POST["genre"];
    $tmp_path = $_FILES["upfile"]["tmp_name"];
    $file_name = $_FILES["upfile"]["name"];
    echo "<div class='tmp_path'>".$tmp_path."</div>"."\n";
@@ -38,9 +39,11 @@ isset($_POST["artist"]) || isset($_POST["email"]) || isset($_POST["hp"]) || isse
 
 
 <form  class="regist_form" action="insert_artist.php" method="post">
-  <input type="text"  name="regist_name" value="">
-  <input type="text"  name="regist_email" value="">
-  <input type="text"  name="regist_hp" value="">
+  <input type="text" class="regist_artist" name="regist_name" value="">
+  <input type="text" class="regist_email"  name="regist_email" value="">
+  <input type="text" class="regist_hp" name="regist_hp" value="">
+  <input type="text" class="regist_img" name="regist_img" value="">
+  <input type="text" class="regist_genre" name="regist_genre" value="">
   <input type="submit">
 </form>
 
@@ -50,6 +53,7 @@ isset($_POST["artist"]) || isset($_POST["email"]) || isset($_POST["hp"]) || isse
   <li>HP :<?= $hp ?></li>
   <li><a href=""></a><li>
 <div class="regist_photo"><?= $img ?></div>
+<li><?= $genre ?></li>
 
 
 <button class="regist_btn">登録</button>
@@ -66,15 +70,20 @@ include("end.php");
 var artist = "<?= $artist ?>";
 var email = "<?= $email ?>";
 var hp = "<?= $hp ?>";
+var img = '<?= $img ?>';
+var genre = '<?= $genre ?>';
 
 
   $(".regist_artist").val(artist);
   $(".regist_email").val(email);
   $(".regist_hp").val(hp);
+  $(".regist_img").val(img);
+  $(".regist_genre").val(genre);
 
 
 $('.regist_btn').on('click',function(){
-   $(".regist_form").submit();
+  // console.log(1);
+  $(".regist_form").submit();
  });
 
 

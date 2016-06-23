@@ -234,5 +234,45 @@ nav>div>ul>li{
 }
 
 .regist_form{
-  display: none;
+  /*display: none;*/
+  position: absolute;
+  top: 500px;
+}
+
+
+.genre-nav>.clearfix>li{
+  display: inline-block;
+  width: 22%;
+  margin-left: 1%;
+  float: left;
+}
+.genre-nav>.clearfix>li{
+  text-align: center;
+}
+
+.genre-nav>.clearfix>li>a{
+  text-decoration: none;
+}
+.genre-nav>.clearfix>li>.second-level{
+  background-color: blue;
+  position:absolute;
+  font-size: 12px;
+  opacity: 0;
+  width: 22%;
+}
+.genre-nav>.clearfix>li:hover>.second-level{
+  /*background-color: blue;
+  position:absolute;
+  font-size: 12px;*/
+  opacity: 1;
+  transition: 1s;
+}
+.genre-nav>.clearfix>li:hover{
+  background-color: blue;
+  transition: 1s;
+}
+
+
+.place-nav{
+    margin: 0px;
 }
