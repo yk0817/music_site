@@ -271,8 +271,24 @@ nav>div>ul>li{
   background-color: blue;
   transition: 1s;
 }
-
-
 .place-nav{
     margin: 0px;
+}
+
+#map{
+  margin-left: 5%;
+  float: left;
+  width: 70%;
+  height: 500px;
+}
+#marker_list{
+  margin-left: 5%;
+  display: inline-block;
+  width: 15%;
+  background-color: blue;
+}
+.map_wrapper{
+  width: 80%;
+  margin: 0 auto;
+  background-color: white;
 }

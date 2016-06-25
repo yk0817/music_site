@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Simple Map</title>
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta charset="utf-8">
+    <style>
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+      #map {
+        height: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="map"></div>
+    <ul>
+      <li class="quatro">渋谷クアトロ</li>
+      <li ></li>
+    </ul>
+    <script>
+
+    function initialize(){
+      // 渋谷
+      map = new google.maps.Map(document.getElementById('map'),{
+        zoom: 14,
+        center: {lat:35.661777,lng:139.704051}
+      });
+      var marker = new google.maps.Marker({
+        title:'<a href=\'\'>渋谷クアトロ</a>',
+        position: {lat:35.661,lng:139.698},
+        map:map
+      });
+      var marker2 = new google.maps.Marker({
+        position: {lat:35.6615,lng:139.699},
+        map:map
+      });
+      var infowindow = new google.maps.InfoWindow({
+        content:"<a href=\"\">a</a>"
+    })
+
+      marker.addListener('click',function(){
+        console.log(infowindow);
+        // なぜかインフォウィンドウがかわらない
+        infowindow.content = this.title;
+
+        infowindow.open(map,marker);
+      });
+
+
+    }
+
+
+    // コールバック関数を実行する関数
+  function execCallback (callback) {
+    console.log('I call callback');
+    callback();
+  }
+
+// execCallback()に渡されるコールバック関数
+var myCallback = function () {
+  console.log('This is my callback');
+}
+
+// execCallback()にコールバック関数を渡して実行する
+execCallback(myCallback);  // => 'I call callback'
+                           //    'This is my callback'
+
+
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD9SBAQijPba2gU6AUhFJMhXLuhtbdVoO0&callback=initialize"></script>
+<!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD9SBAQijPba2gU6AUhFJMhXLuhtbdVoO0"></script> -->
+
+
+  </body>
+</html>
