@@ -9,7 +9,7 @@ include("header_place.php");
       <ul class="second-level">
         <li><a class="shinjuku" href="">新宿区</a></li>
         <!-- <li><a class="shibuya" onclick="alert("a");" href="">渋谷区</a></li> -->
-        <li id = "area" class="SHIBUYA" data-area = "shibuya">渋谷区</li>
+        <li id = "district" class="SHIBUYA" data-district = "shibuya">渋谷区</li>
         <li><a class="taito" href="">台東区</a></li>
         <li><a class="suginami" href="">杉並区</a></li>
         <li><a class="nakano" href="">中野区</a></li>

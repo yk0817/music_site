@@ -46,19 +46,19 @@ function initialize(){
 
 }
 
-$("#area").click(function(){
+$("#district").click(function(){
   // console.log(this);
   // console.log($(this).attr("class"));
   // console.log($(".shibuya").data('area'));
 
-  var area = $(this).data('area');
+  var district = $(this).data('district');
 
   $.ajax({
     type: 'POST',
     url: './lib/fetch_place.php',
     dataType:'json',
     data: {
-      'area': area
+      'district': district
     },
     success: function(data){
       console.log(data);
