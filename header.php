@@ -5,10 +5,13 @@
   <title>DJ_BOOK</title>
 </head>
 <link rel="stylesheet" href="./css/style1.css">
-<!-- <link rel="stylesheet" href="./css/lity.css"> -->
+<link rel="stylesheet" href="./css/jquery-ui.css">
+<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1/themes/redmond/jquery-ui.css" >
 <script type="text/javascript" src="./js/jquery-2.1.0.min.js"></script>
 <script type="text/javascript" src="./js/music.js"></script>
-<!-- <script type="text/javascript" src="./js/lity.js"></script> -->
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1/jquery-ui.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1/i18n/jquery.ui.datepicker-ja.min.js"></script>
+<!-- <script type="text/javascript" src="./js/jquery-ui.js"></script> -->
 <body>
   <div class="container">
     <header class="global">

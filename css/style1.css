@@ -260,6 +260,12 @@ nav>div>ul>li{
   opacity: 0;
   width: 22%;
 }
+.genre-nav>.clearfix>li>.second-level>li{
+  margin-bottom: 20px;
+}
+.genre-nav>.clearfix>li>.second-level>li:hover{
+  background-color:white;
+}
 .genre-nav>.clearfix>li:hover>.second-level{
   /*background-color: blue;
   position:absolute;
@@ -291,4 +297,20 @@ nav>div>ul>li{
   width: 80%;
   margin: 0 auto;
   background-color: white;
+}
+#district:hover{
+  cursor: pointer;
+}
+/*nav>ul>li>.second-level>#district{
+  margin-bottom: 5px;
+}*/
+
+.input_offer{
+  position:absolute;
+  top: 200px;
+  left: 200px;
+}
+.offer_action{
+  position:absolute;
+  top: 200px;
 }

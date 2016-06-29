@@ -32,8 +32,10 @@ include("header.php");
           <p>ジャンル：ALL-MIX
             <br>料金：10000円/hr
             <br>HP:
-            <br>オファー
+            <br>
           </p>
+          <a href="./offer.php?artist=やけのはら">オファー</a>
+
         </li>
         <li>
           <a href="#"><img src="./img/1.jpg" alt=""></a>
